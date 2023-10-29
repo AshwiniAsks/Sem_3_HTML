@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+      .registration-container {
+    text-align: center;
+    margin: 50px auto;
+    width: 300px;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color:rgba(169, 159, 159, 0.39);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100px;
+    height: 80px;
+    margin: 10px auto;
+}
+
+form {
+    text-align: left;
+}
+
+.form-group {
+    display: inline-flex;
+    margin: 10px 0;
+}
+
+label {
+    display: inline-flex;
+    font-weight: bold;
+}
+
+input[type="text"] {display: inline; margin-left: 30px; border: 2px solid blue; padding: 6px;}
+input[type="email"] {display: inline; margin-left: 65px; border: 2px solid blue; padding: 6px;}
+input[type="number"] {display: inline; margin-left: 58px; border: 2px solid blue; padding: 6px;}
+input[type="password"] {display: inline; margin-left: 35px; border: 2px solid blue; padding: 6px;}
+select {
+    margin-left: 50px;
+    display: flex;
+    padding: 8px;
+    border: 2px solid blue;
+    border-radius: 3px;
+}
+
+input[type="radio"] {
+    margin-left: 50px;
+}
+
+input[type="submit"] {
+    background-color:cyan;
+    color:green;
+    width:200px;
+    font-size:large;
+    margin-left:45px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color:rgb(49, 184, 34);
+}
+
+   </style>
+</head>
+<body>
+    <h1 align="center">Question_10</h1>
+    <h3  align="center">Registration Page</h3>
+    <div class="registration-container">
+        <img src="iter.jpeg" alt="SOA Logo" class="logo">
+        <h1>Registration</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">User Name</label>
+                <input type="text" id="name" name="name"  placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"  placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile</label>
+                <input type="number" id="mobile" name="mobile"  placeholder="Enter Mobile No...">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                        <input type="radio" value="Male" name="gender"> Male
+                        <input type="radio" value="Female" name="gender">Female
+            </div>
+            <div class="form-group">
+                <label for="Country">Country</label>
+                <select id="Country" name="Country" aria-placeholder="Enter City" >
+                    <option value>Select Country</option>
+                    <option value="India">India</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

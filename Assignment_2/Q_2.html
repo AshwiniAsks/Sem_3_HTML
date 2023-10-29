@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .table {
+            display: table;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        .table div {
+            display: table-row;
+        }
+
+        .table div > div {
+            display: table-cell;
+            padding: 5px 10px;
+        }
+
+        .table div > div:nth-child(odd) {
+            background-color: yellowgreen;
+        }
+        .table div > div:nth-child(even)
+        {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Question_2</h1>
+    <h3>Table with DIV</h3>
+    <div class="table">
+        <div>
+            <div><b>Registration_No</b></div>
+            <div><b>Name</b></div>
+            <div><b>Branch</b></div>
+            <div><b>Address</b></div>
+        </div>
+        <div>
+            <div>2241019181</div>
+            <div>Ashwini Kumar Sahu</div>
+            <div>CSE</div>
+            <div>Ranchi,Jharkhand</div>
+        </div>
+        <div>
+            <div>2241016794</div>
+            <div>Lohit Mishra</div>
+            <div>CSIT</div>
+            <div>Bokaro,Jharkhand</div>
+        </div>
+        <div>
+            <div>2241016594</div>
+            <div>Tara Prasad</div>
+            <div>EEC</div>
+            <div>Palamu,Jharkhand</div>
+        </div>
+    </div>
+</body>
+</html>
